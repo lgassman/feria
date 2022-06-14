@@ -63,8 +63,8 @@ Resultados:
 
 ## 1.2 Usar los puestos
 
-Cuando una persona visitante usa un puesto el sistema debe registrarlo, ya que es un requerimiento importante el 
-saber cuales fueron los visitantes que han usado un determinado puesto.
+Cuando una persona visitante usa un puesto el sistema debe registrarla, ya que es un requerimiento importante el 
+saber cuales fueron las visitantes que han usado un determinado puesto.
 
 Además, al usar el puesto ocurre algo dependiendo del puesto:
 - Si se usa un puesto comercial, el visitante debe pagar el costo del mismo, por lo que se disminuye el dinero disponible).
