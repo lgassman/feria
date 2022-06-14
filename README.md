@@ -108,8 +108,7 @@ Luego de estas acciones comprobar que:
 ## 2.1 Consultas
 Todos los puestos tienen un municipio que los apadrina. 
 
-Existen Los **puestos impositivos** a través de los cuales los visitantes 
-puedan pagar toda o parte de su deuda municipal.
+Existen Los **puestos impositivos** que al ser usado, un visitante pagará toda o parte de su deuda municipal.
 
 Por eso de cada visitante se conoce, además de lo explicado en el punto anterior, cuál es su municipio de residencia
 y cuánto dinero le debe éste. De cada puesto (impositivo o no) se conoce, también, el municipio que lo apadrina.
@@ -117,7 +116,7 @@ y cuánto dinero le debe éste. De cada puesto (impositivo o no) se conoce, tamb
 Para que un puesto impositivo pueda ser usado por una persona visitante debe cumplirse que:
 - El visitante debe residir en el mismo municipio que apadrina el puesto impositivo. 
 - El visitante debe tener deuda. 
-- El visitante debe ser capaz de pagar el monto exigile por el municipio apadrinante. 
+- El visitante debe ser capaz de pagar el monto exigible por el municipio apadrinante. 
 
 El monto exigible siempre se calcula como la resta de un monto bruto y un monto prorrogable.
 
@@ -134,6 +133,8 @@ mientras que el monto prorrogable es igual que los **municipios normales**.
 Para los **municipios hiperrelajados**, el monto bruto es el 80% del bruto que calcularía un **municipio relajado** y el 
 monto prorrogable es el doble que el del resto de los municipios. Pero además, la edad para saber si corresponde o no
 baja a **60 años**.
+
+**Nota:** El efecto del uso se resolverá más adelante en el siguiente punto (2.2)
 
 ### Requerimientos:
 - __2.1.a:__ Saber el monto exigible por un municipio.
