@@ -195,7 +195,7 @@ por un municipio.
 
 
 1. Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para Quilmes).
-Ésta ferie debe tener también los puestos de  arte y dardos usado en puntos anteriores.
+Esta feria debe tener también los puestos de  arte y dardos usado en puntos anteriores.
 2. Además de Remedios, Martín y Miguel del punto anterior, se necesita a Juana, quien reside en San Martín, tiene 20 años, 1000 pesos y una deuda de 300. 
 3. hacer que el puesto impositivo de Tigre sea usado por Remedios.
 4. hacer que el puesto impositivo de San Martín sea usado por Juana. 
