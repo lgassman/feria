@@ -10,7 +10,7 @@
 - Este enunciado es acompañado con un archivo `.wtest` que tiene diseñado los test a realizar. Es importante aclarar que:
   - Estos tests se proponen para facilitar el desarrollo. Se puede diseñar otros si así se considera necesario.
   - El conjunto de tests propuesto es suficiente para este ejercicio. No hace falta agregar nuevos, pero tampoco se prohibe hacerlo.
-  - Todos los objetos allí usados se asumen como instancias de una clase. Si el diseño de la solución utiliza objetos bien conocidos en algunos casos entonces se debe remover la declaración de la variable y la línea en que se sugiere la instanciación
+  - Todos los objetos allí usados se asumen como instancias de una clase. Si el diseño de la solución utiliza objetos autodefinidos en algunos casos entonces se debe remover la declaración de la variable y la línea en que se sugiere la instanciación
   - Según el diseño de la solución, es probable que se requiera agregar más objetos a los sugeridos en los tests
   - Los tests están comentados de manera de poder _ir incorporándolos a medida que se avanza_ con la solución del ejercicio
 
@@ -22,23 +22,23 @@ como organizar el evento real.
 
 ## Parte 1.1: Feria, Puestos y Visitantes
 
-De una **feria** se conoce que puestos la componenen.
+De una **feria** se conoce que puestos la componen.
 
 De una persona **visitante** se conoce, en principio, la edad y el dinero que tiene disponible.  
 
-Según esa información se puede determinar si un puesto puede ser usado por ella o no, ya que hay distintas variantes de puestos: 
+Según esa información se puede determinar si un puesto puede ser usado por ella o no. Hay distintas variantes de puestos: 
 
 - Existen puestos de juegos y artes pensados para el sector **infantil**. Estos puestos solo pueden ser usados por personas que tienen menos de
 18 años.
 - Los puestos **comerciales** tienen un costo que se conoce para cada puesto. Una persona visitante puede usarlo si tiene suficiente dinero para pagar
  el costo.
  
- **Nota:** Mas variantes de puestos aparecerán 
+ **Nota:** Más variantes de puestos podrían ser requeridas en el futuro. 
 
 ### Requerimientos
 
-- Saber si un visitante puede visitar un puesto
-- Saber todos los puestos que un visitante puede vistar en la feria
+- __1.1.a:__ Saber si un visitante puede visitar un puesto
+- __1.1.b:__ Saber todos los puestos que un visitante puede vistar en la feria
 
 ### Casos de ejemplo
 
@@ -125,10 +125,10 @@ El monto exigible siempre se calcula como la resta de un monto bruto y un monto 
    monto exigible = monto bruto - monto prorrogable
 ```
 
-Para los ** municipios normales **, el monto bruto es la totalidad de la deuda del visitante, y el monto prorrogable
+Para los **municipios normales**, el monto bruto es la totalidad de la deuda del visitante, y el monto prorrogable
 es el 10 por ciento del monto bruto si la persona es mayor de 75 años o 0 en otro caso.
 
-Para los **municipios relajados ** el monto bruto es el número menor de entre la deuda y el dinero disponible,
+Para los **municipios relajados** el monto bruto es el número menor de entre la deuda y el dinero disponible,
 mientras que el monto prorrogable es igual que los municipios normales
 
 Para los **municipios hiper relajados", el monto bruto es el 80% del bruto de los **municipios relajados** y el 
