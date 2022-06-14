@@ -126,14 +126,14 @@ El monto exigible siempre se calcula como la resta de un monto bruto y un monto 
 ```
 
 Para los **municipios normales**, el monto bruto es la totalidad de la deuda del visitante, y el monto prorrogable
-es el 10 por ciento del monto bruto si la persona es mayor de 75 años o 0 en otro caso.
+es el 10 por ciento del monto bruto si la persona es mayor de **75 años** o 0 en otro caso.
 
 Para los **municipios relajados** el monto bruto es el número menor de entre la deuda y el dinero disponible,
 mientras que el monto prorrogable es igual que los municipios normales.
 
-Para los **municipios hiperrelajados**, el monto bruto es el 80% del bruto que calcularía un **municipios relajado** y el 
-monto prorrogable es el doble que el del resto de los municipios. pero además la edad para saber si corresponde o no
-baja a 60 años.
+Para los **municipios hiperrelajados**, el monto bruto es el 80% del bruto que calcularía un **municipio relajado** y el 
+monto prorrogable es el doble que el del resto de los municipios. Pero además, la edad para saber si corresponde o no
+baja a **60 años**.
 
 ### Requerimientos:
 - __2.1.a:__ Saber el monto exigible por un municipio.
