@@ -39,8 +39,8 @@ Según esa información se puede determinar si un puesto puede ser usado por ell
 
 ### Requerimientos
 
-- __1.1.a:__ Saber si un puesto puede ser usado por un visitante
-- __1.1.b:__ Saber todos los puestos de una feria  que un visitante puede usar
+- __1.1.a:__ Saber si un puesto puede ser usado por una persona visitante
+- __1.1.b:__ Saber todos los puestos de una feria  que una persona visitante puede usar
 
 ### Casos de ejemplo
 
@@ -59,46 +59,46 @@ Resultados:
 - Martín puede visitar los dardos y el puesto de arte.
 
 
-**Nota** Pensar que puede haber muchos puestos comerciales e infantiles distintos. 
+**Nota:** Pensar que puede haber muchos puestos comerciales e infantiles distintos. 
 
 ## 1.2 Usar los puestos
 
-Cuando un visitante usa un puesto el sistema debe registrarlo, ya que es un requerimiento importante el 
+Cuando una persona visitante usa un puesto el sistema debe registrarlo, ya que es un requerimiento importante el 
 saber cuales fueron los visitantes que han usado un determinado puesto.
 
 Además, al usar el puesto ocurre algo dependiendo del puesto:
 - Si se usa un puesto comercial, el visitante debe pagar el costo del mismo, por lo que se disminuye el dinero disponible).
 - Si se usa un puesto infantil, el visitante gana 10 pesos
 
-**Nota:** Tener en cuenta que un visitante solo tiene que poder usar un puesto que cumpla con las condiciones del punto anterior.
+**Nota:** Tener en cuenta que una persona visitante solo tiene que poder usar un puesto que cumpla con las condiciones del punto anterior.
 
 ### Requerimientos:
 
 - Saber que visitantes han usado un puesto.
-- Saber el dinero de un visitante luego de haber usado uno o más puestos. 
-- Saber si un visitante usó al menos un puesto de la feria.
+- Saber el dinero de una persona visitante luego de haber usado uno o más puestos. 
+- Saber si una persona visitante usó al menos un puesto de la feria.
 
 ### Casos de ejemplo
 
 #### usar y comprobar efectos
-1. hacer que el puesto de dardos sea usado por remedios. 
-2. el puesto de arte no debe poder ser usado por remedios
+1. hacer que el puesto de dardos sea usado por Remedios. 
+2. el puesto de arte no debe poder ser usado por Remedios
 3. el puesto de dardos no debe poder ser usado por manuel 
 4. hacer que el puesto de arte sea usado por manuel 
 5. hacer que el puesto de dardos sea usado por Martín. 
 6. hacer que el puesto de arte sea usado por Martín
 
 Luego de estas acciones comprobar que:
-- El dinero de remedios es 450
+- El dinero de Remedios es 450
 - El dinero de manuel es  40
-- El dinero de martín es 80
+- El dinero de Martín es 80
 - El puesto de arte fue usado  por Martín y manuel
-- El puesto de dardos due usados por remedios y Martín
+- El puesto de dardos due usados por Remedios y Martín
 
 #### seber si se usó o no una feria
-1. hacer que el puesto de dardos sea usado por remedios. 
+1. hacer que el puesto de dardos sea usado por Remedios. 
 2. hacer que el puesto de dardos sea usado por manuel (NO SE PUEDE!)
-3. revisar que remedios usó la feria azurduy
+3. revisar que Remedios usó la feria azurduy
 4. revisar que manuel no usó la feria azurduy
 5. revisar que Martín no uso la feria azurduy
 
@@ -115,7 +115,7 @@ puedan pagar toda o parte de su deuda municipal.
 Por eso de cada visitante se conoce, además de lo explicado en el punto anterior, cuál es su municipio de residencia
 y cuánto dinero le debe éste. De cada puesto (impositivo o no) se conoce, también, el municipio que lo apadrina.
 
-Para que un puesto impositivo pueda ser usado por un visitante debe cumplirse que:
+Para que un puesto impositivo pueda ser usado por una persona visitante debe cumplirse que:
 - El visitante debe residir en el mismo municipio que apadrina el puesto impositivo. 
 - El visitante debe tener deuda 
 - El visitante debe ser capaz de pagar el monto que el municipio exigible por el municipio. 
@@ -157,25 +157,25 @@ Los valores de deuda y residencia de los mismos objetos usados en el punto anter
 tanto puesto de arte como el de dardos es apadrinado por San Martín
 
 Entonces:
-- El monto exigible para martín es de 80, ya que la totalidad de su deuda es 80 y por tener mas de 75 años lo prorrogable es 0.
+- El monto exigible para Martín es de 80, ya que la totalidad de su deuda es 80 y por tener mas de 75 años lo prorrogable es 0.
 Cómo él posee 120 pesos puede usar un puesto impositivo de san Martín. (pero ninguno impositivo de otro municipio)
 - El monto exigible para manuel es de 0, ya que el número menor entre 0 (su deuda) y 30 (su dinero), es 0. la prorrogable es 0. 
 Cómo él posee no posee deuda, no puede usar un puesto impositivo de Quilmes
-- El monto exigible para remedios es 320, ya que el bruto es 400 por ser el 80% de 500, que es
+- El monto exigible para Remedios es 320, ya que el bruto es 400 por ser el 80% de 500, que es
  el menor numero entre 700 (su deuda) y 500 (su dinero), pero al tener más de 60 años recibe una prorraga de 80 pesos 
  (ya que 80 es el doble de 40, que es lo que recibiría de un municipio relajado) 
 Cómo posee 500 pesos, es capaz de usar un puesto impositivo de Tigre
 
 Por otro lado: 
-- Si remedios viviese en San Martín, el monto exigible sería de 700 (no entraría a la prórroga). Y por lo tanto no podría
-usar un puesto impositivo de san martín
-- Si remedios viviese en Quilmes, el monto exigible sería de 500 (todo su dinero dispoble, pero sin prórroga porque no le da la edad),
+- Si Remedios viviese en San Martín, el monto exigible sería de 700 (no entraría a la prórroga). Y por lo tanto no podría
+usar un puesto impositivo de san Martín
+- Si Remedios viviese en Quilmes, el monto exigible sería de 500 (todo su dinero dispoble, pero sin prórroga porque no le da la edad),
 peto si tuviera 80 años el monto exigible sería de 450, ya que recibiría 50 de prórroga. En ambos casos podría usar un puesto impositivo 
 de Quilmes
  
 ## 2.2 Usar puestos municipales y consultas adicionales
 
-Cuando un visitante usa un puesto impositivo ocurre lo siguiente:
+Cuando una persona visitante usa un puesto impositivo ocurre lo siguiente:
 
 - queda registrado que la persona usó el puesto (como en todos los puestos)
 - se le resta al visitante el monto exigible tanto de la deuda como del dinero
@@ -184,7 +184,7 @@ por un municipio
 
 ### Requerimientos
 
-- Hacer que un visitante pueda visitar un puesto impositivo
+- Hacer que una persona visitante pueda visitar un puesto impositivo
 - Saber el total recaudado por un municipio 
 - Saber cuantos puestos apadrina un municipio en una feria
 - Saber todos los municipios que apadrinan al menos un puesto en una feria
@@ -198,20 +198,20 @@ por un municipio
 1. Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para quilmes)
 (además de la de arte y dardos usado en puntos anteriores)
 2. Además de Remedios, Martín y Miguel del punto anterior, se necesita a Juana, quien reside en San Martín, tiene 20 años, 1000 pesos y una deuda de 300. 
-3. hacer que el puesto impositivo de tigre sea usado por remedios
+3. hacer que el puesto impositivo de tigre sea usado por Remedios
 4. hacer que el puesto impositivo de san Martín sea usado por Juana 
 5. hacer que el puesto impositivo de san Martín sea usado por Martín
 
 verificar que:
-- martín no tiene mas deuda y le queda 40 de dinero
-- juana no tiene más deuda y le queda 700 de dinero
-- remedios tiene 380 de deuda y 180 de dinero
+- Martín no tiene mas deuda y le queda 40 de dinero
+- Juana no tiene más deuda y le queda 700 de dinero
+- Remedios tiene 380 de deuda y 180 de dinero
 - tigre recaudó 320
-- san martín recaudó 380
+- san Martín recaudó 380
 - tigre apadrina 1 puesto de la feria azurduy
-- san martín apadrina 3 puestos de la feria azurduy
+- san Martín apadrina 3 puestos de la feria azurduy
 - quilmes no apadrina a nadie en la feria azurduy
-- los municipios apadrinantes de la feria azurduy son tigre y san martín
+- los municipios apadrinantes de la feria azurduy son tigre y san Martín
 - el promedio de racaudación de la feria azurduy es 350
 - el municipio que menos recaudó en la feria es tigre
 
