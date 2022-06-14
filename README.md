@@ -40,7 +40,7 @@ Según esa información se puede determinar si un puesto puede ser usado por ell
 ### Requerimientos
 
 - __1.1.a:__ Saber si un puesto puede ser usado por un visitante
-- __1.1.b:__ Saber todos los puestos de la feria  que un visitante puede usar
+- __1.1.b:__ Saber todos los puestos de una feria  que un visitante puede usar
 
 ### Casos de ejemplo
 
@@ -81,29 +81,28 @@ Además, al usar el puesto ocurre algo dependiendo del puesto:
 ### Casos de ejemplo
 
 #### usar y comprobar efectos
-- hacer que el puesto de dardos sea usado por remedios. 
-- el puesto de arte no debe poder ser usado por remedios
-- el puesto de dardos no debe poder ser usado por manuel 
-- hacer que el puesto de arte sea usado por manuel 
-- hacer que el puesto de dardos sea usado por Martín. 
-- hacer que el puesto de arte sea usado por Martín
+1. hacer que el puesto de dardos sea usado por remedios. 
+2. el puesto de arte no debe poder ser usado por remedios
+3. el puesto de dardos no debe poder ser usado por manuel 
+4. hacer que el puesto de arte sea usado por manuel 
+5. hacer que el puesto de dardos sea usado por Martín. 
+6. hacer que el puesto de arte sea usado por Martín
 
 Luego de estas acciones comprobar que:
 - El dinero de remedios es 450
 - El dinero de manuel es  40
 - El dinero de martín es 80
--el puesto de arte fue usado  por Martín y manuel
--el puesto de dardos due usados por remedios y Martín
+- El puesto de arte fue usado  por Martín y manuel
+- El puesto de dardos due usados por remedios y Martín
 
 #### seber si se usó o no una feria
-- hacer que el puesto de dardos sea usado por remedios. 
-- hacer que el puesto de dardos sea usado por manuel (NO SE PUEDE!)
-- revisar que remedios usó la feria azurduy
-- revisar que manuel no usó la feria azurduy
-- revisar que Martín no uso la feria azurduy
+1. hacer que el puesto de dardos sea usado por remedios. 
+2. hacer que el puesto de dardos sea usado por manuel (NO SE PUEDE!)
+3. revisar que remedios usó la feria azurduy
+4. revisar que manuel no usó la feria azurduy
+5. revisar que Martín no uso la feria azurduy
 
 #### uso de la feria
-- Verificar en este punto que tanto remedios como manuel han usado algún puesto de feria, pero Martín no.
 
 # 2. Municipios y Puestos municipales de impuesto
 
@@ -168,13 +167,13 @@ Cómo él posee no posee deuda, no puede usar un puesto impositivo de Quilmes
 Cómo posee 500 pesos, es capaz de usar un puesto impositivo de Tigre
 
 Por otro lado: 
--si remedios viviese en San Martín, el monto exigible sería de 700 (no entraría a la prórroga). Y por lo tanto no podría
+- Si remedios viviese en San Martín, el monto exigible sería de 700 (no entraría a la prórroga). Y por lo tanto no podría
 usar un puesto impositivo de san martín
--si remedios viviese en Quilmes, el monto exigible sería de 500 (todo su dinero dispoble, pero sin prórroga porque no le da la edad),
+- Si remedios viviese en Quilmes, el monto exigible sería de 500 (todo su dinero dispoble, pero sin prórroga porque no le da la edad),
 peto si tuviera 80 años el monto exigible sería de 450, ya que recibiría 50 de prórroga. En ambos casos podría usar un puesto impositivo 
 de Quilmes
  
-## 2.2 Usar puestos municipales
+## 2.2 Usar puestos municipales y consultas adicionales
 
 Cuando un visitante usa un puesto impositivo ocurre lo siguiente:
 
@@ -185,21 +184,24 @@ por un municipio
 
 ### Requerimientos
 
-- hacer que un visitante pueda visitar un puesto impositivo
-- saber el total recaudado por un municipio 
-- saber cuantos puestos apadrina un municipio en una feria
-- saber todos los municipios que apadrinan al menos un puesto en una feria
-- saber el promedio de recaudación de los municipios de una feria
-- saber el municipio que menos recaudó de una feria
+- Hacer que un visitante pueda visitar un puesto impositivo
+- Saber el total recaudado por un municipio 
+- Saber cuantos puestos apadrina un municipio en una feria
+- Saber todos los municipios que apadrinan al menos un puesto en una feria
+- Saber el promedio de recaudación de los municipios de una feria
+- Saber el municipio que menos recaudó de una feria
 
 
 ### Caso de ejemplo
 
-- Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para quilmes)
+
+1. Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para quilmes)
 (además de la de arte y dardos usado en puntos anteriores)
-- juana reside en San Martín, tiene 20 años, 1000 pesos y una deuda de 300. 
-- hacer que el puesto impositivo de tigre sea usado por remedios
-- hacer que e puesto impositivo de san Martín sea usado por Juana y por Martín
+2. Además de Remedios, Martín y Miguel del punto anterior, se necesita a Juana, quien reside en San Martín, tiene 20 años, 1000 pesos y una deuda de 300. 
+3. hacer que el puesto impositivo de tigre sea usado por remedios
+4. hacer que el puesto impositivo de san Martín sea usado por Juana 
+5. hacer que el puesto impositivo de san Martín sea usado por Martín
+
 verificar que:
 - martín no tiene mas deuda y le queda 40 de dinero
 - juana no tiene más deuda y le queda 700 de dinero
