@@ -39,8 +39,8 @@ Según esa información se puede determinar si un puesto puede ser usado por ell
 
 ### Requerimientos
 
-- __1.1.a:__ Saber si un visitante puede visitar un puesto
-- __1.1.b:__ Saber todos los puestos que un visitante puede vistar en la feria
+- __1.1.a:__ Saber si un puesto puede ser usado por un visitante
+- __1.1.b:__ Saber todos los puestos de la feria  que un visitante puede usar
 
 ### Casos de ejemplo
 
