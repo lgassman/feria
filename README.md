@@ -129,7 +129,7 @@ Para los **municipios normales**, el monto bruto es la totalidad de la deuda del
 es el 10 por ciento del monto bruto si la persona es mayor de **75 años** o 0 en otro caso.
 
 Para los **municipios relajados** el monto bruto es el número menor de entre la deuda y el dinero disponible,
-mientras que el monto prorrogable es igual que los municipios normales.
+mientras que el monto prorrogable es igual que los **municipios normales**.
 
 Para los **municipios hiperrelajados**, el monto bruto es el 80% del bruto que calcularía un **municipio relajado** y el 
 monto prorrogable es el doble que el del resto de los municipios. Pero además, la edad para saber si corresponde o no
@@ -139,7 +139,7 @@ baja a **60 años**.
 - __2.1.a:__ Saber el monto exigible por un municipio.
 - __2.1.b:__ Saber si una persona visitante puede visitar un puesto impositivo.
 
-Nota: Es muy importante en este punto demostrar el dominio de la herencia para no duplicar código!
+**Nota:** Es muy importante en este punto demostrar el dominio de la herencia para no duplicar código!
 
 #### Casos de ejemplo
 
@@ -168,8 +168,8 @@ Cómo posee 500 pesos, es capaz de usar un puesto impositivo de Tigre.
 Por otro lado: 
 - Si Remedios viviese en San Martín, el monto exigible sería de 700 (no entraría a la prórroga). Y por lo tanto no podría
 usar un puesto impositivo de San Martín.
-- Si Remedios viviese en Quilmes, el monto exigible sería de 500 (todo su dinero dispoble, pero sin prórroga porque no le da la edad),
-peto si tuviera 80 años el monto exigible sería de 450, ya que recibiría 50 de prórroga. En ambos casos podría usar un puesto impositivo 
+- Si Remedios viviese en Quilmes, el monto exigible sería de 500 (todo su dinero disponible, pero 0 de prórroga porque no le da la edad),
+pero si tuviera 80 años el monto exigible sería de 450, ya que recibiría 50 de prórroga. En ambos casos podría usar un puesto impositivo 
 de Quilmes.
  
 ## 2.2 Usar puestos municipales y consultas adicionales
@@ -178,12 +178,12 @@ Cuando una persona visitante usa un puesto impositivo ocurre lo siguiente:
 
 - Queda registrado que la persona usó el puesto (como en todos los puestos).
 - Se le resta al visitante el monto exigible tanto de la deuda como del dinero.
-- Se registra en algún lugar que el municipió recaudó el monto exigible, ya que es requerimiento saber cuanto es el total recaudado 
+- Se registra en algún lugar que el municipió recaudó el monto exigible, ya que es requerimiento saber cuánto es el total recaudado 
 por un municipio.
 
 ### Requerimientos
 
-- Hacer que una persona visitante pueda visitar un puesto impositivo.
+- Hacer que una persona visitante use un puesto impositivo.
 - Saber el total recaudado por un municipio.
 - Saber cuantos puestos apadrina un municipio en una feria.
 - Saber todos los municipios que apadrinan al menos un puesto en una feria.
@@ -194,8 +194,8 @@ por un municipio.
 ### Caso de ejemplo
 
 
-1. Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para Quilmes)
-(además de la de arte y dardos usado en puntos anteriores).
+1. Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para Quilmes).
+Ésta ferie debe tener también los puestos de  arte y dardos usado en puntos anteriores.
 2. Además de Remedios, Martín y Miguel del punto anterior, se necesita a Juana, quien reside en San Martín, tiene 20 años, 1000 pesos y una deuda de 300. 
 3. hacer que el puesto impositivo de Tigre sea usado por Remedios.
 4. hacer que el puesto impositivo de San Martín sea usado por Juana. 
