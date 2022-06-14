@@ -170,28 +170,6 @@ describe "feria" {
  		
  		
  	}
- 	
- 	
-//	test "puede visitar municipal" {
-//		assert.that(municipal.puedeUsar(remedios)) //asegurarse que municipal puede ser visitado por remedios
-//		assert.notThat(municipal.puedeUsar(manuel)) //asegurarse que municipal NO puede ser visitado por manuel
-//		assert.that(municipal.puedeUsar(martin)) //asegurarse que municipal puede ser visitado por martin
-//	}
-//	
-//	test "usar municipal" {
-//		//- hacer el puesto municipal sea usado por remedios. 
-//		//- hacer que el puesto municipal sea usado por manuel (NO SE PUEDE!)
-//		//- hacer que el puesto municipal sea usado por martin  
-//		assert.that(true)
-//
-//		municipal.usar(remedios)
-//		assert.throwsException({municipal.usar(manuel)})
-//		municipal.usar(martin)
-//		assert.equals(0, remedios.deuda())
-//		assert.equals(0, manuel.deuda())
-//		assert.equals(0, martin.deuda())
-//		assert.equals(220, municipal.recaudado())
-//		assert.equals(#{martin, remedios}, municipal.visitantes())
-//	}
+
 	
 }

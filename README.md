@@ -20,7 +20,9 @@ En una región se desarrolla periódicamente ferias con varios puestos para que 
 A través de este sistema se pretende tener las herramientas para simular el evento y poder tomar así decisiones sobre
 como organizar el evento real.
 
-## Parte 1.1: Feria, Puestos y Visitantes
+# 1: Feria, Puestos y Visitantes
+
+## 1.1: Consultas
 
 De una **feria** se conoce que puestos la componen.
 
@@ -45,8 +47,7 @@ Según esa información se puede determinar si un puesto puede ser usado por ell
 Visitantes:
 - Remedios tiene 72 años, tiene 500 pesos disponible.
 - Manuel tiene 7 años y tiene 30 pesos.
-- Martin tiene 16 años y tiene 120 pesos.
-
+- Martín tiene 16 años y tiene 120 pesos.
 
 La feria de la Av. Azurduy cuenta con 2 puestos:
 - Un puesto comercial para jugar dardos con costo 50 pesos
@@ -55,12 +56,12 @@ La feria de la Av. Azurduy cuenta con 2 puestos:
 Resultados:
 - Remedios solo puede visitar los dardos de la feria. 
 - Manuel solo puede visitar el puesto de arte.
-- Martin puede visitar los los dardos y el puesto de arte.
+- Martín puede visitar los dardos y el puesto de arte.
 
 
-**Nota** Pensar que puede haber muchos puestos comerciales e infantiles distintos. El puesto municipal siempre es único
+**Nota** Pensar que puede haber muchos puestos comerciales e infantiles distintos. 
 
-## 1.2 Usar puesto
+## 1.2 Usar los puestos
 
 Cuando un visitante usa un puesto el sistema debe registrarlo, ya que es un requerimiento importante el 
 saber cuales fueron los visitantes que han usado un determinado puesto.
@@ -84,28 +85,29 @@ Además, al usar el puesto ocurre algo dependiendo del puesto:
 - el puesto de arte no debe poder ser usado por remedios
 - el puesto de dardos no debe poder ser usado por manuel 
 - hacer que el puesto de arte sea usado por manuel 
-- hacer que el puesto de dardos sea usado por martin. 
-- hacer que el puesto de arte sea usado por martin
+- hacer que el puesto de dardos sea usado por Martín. 
+- hacer que el puesto de arte sea usado por Martín
 
 Luego de estas acciones comprobar que:
 - El dinero de remedios es 450
 - El dinero de manuel es  40
 - El dinero de martín es 80
--el puesto de arte fue usado  por martin y manuel
--el puesto de dardos due usados por remedios y martin
+-el puesto de arte fue usado  por Martín y manuel
+-el puesto de dardos due usados por remedios y Martín
 
 #### seber si se usó o no una feria
 - hacer que el puesto de dardos sea usado por remedios. 
 - hacer que el puesto de dardos sea usado por manuel (NO SE PUEDE!)
 - revisar que remedios usó la feria azurduy
 - revisar que manuel no usó la feria azurduy
-- revisar que martin no uso la feria azurduy
+- revisar que Martín no uso la feria azurduy
 
 #### uso de la feria
-- Verificar en este punto que tanto remedios como manuel han usado algún puesto de feria, pero martin no.
+- Verificar en este punto que tanto remedios como manuel han usado algún puesto de feria, pero Martín no.
 
-## 2. Municipios y Puestos municipales de impuesto
+# 2. Municipios y Puestos municipales de impuesto
 
+## 2.1 Consultas
 Todos los puestos tienen un municipio que los apadrina. 
 
 Existen Los **puestos impositivos** a través de los cuales los visitantes 
@@ -135,13 +137,13 @@ Para los **municipios hiper relajados", el monto bruto es el 80% del bruto de lo
 monto prorrogable es el doble que el del resto de los municipios. pero además la edad para saber si corresponde o no
 baja a 60 años.
 
-### 2.1 Requerimientos:
-- Saber el monto exigible por un municipio
-- Saber si una persona visitante puede visitar un puesto impositivo
+### Requerimientos:
+- __2.1.a:__ Saber el monto exigible por un municipio
+- __2.1.b:__ Saber si una persona visitante puede visitar un puesto impositivo
 
 Nota: Es muy importante en este punto demostrar el dominio de la herencia para no duplicar código!
 
-#### Ejemplo de monto exigible y puede visitar puesto municipal
+#### Casos de ejemplo
 
 Dado que:
 - San Martín es un municipio normal
@@ -149,15 +151,15 @@ Dado que:
 - Tigre es un municipio Hiper Relajado
 
 Los valores de deuda y residencia de los mismos objetos usados en el punto anterior:
-- Martin tiene una deuda de 80 pesos, vive en San Martin
+- Martín tiene una deuda de 80 pesos, vive en San Martín
 - Manuel tiene una deuda de 0 pesos, vive en Quilmes
 - Remedios tiene una deuda de 700 pesos, vive en Tigre
 
-tanto puesto de arte como el de dardos es apadrinado por San Martin
+tanto puesto de arte como el de dardos es apadrinado por San Martín
 
 Entonces:
 - El monto exigible para martín es de 80, ya que la totalidad de su deuda es 80 y por tener mas de 75 años lo prorrogable es 0.
-Cómo él posee 120 pesos puede usar un puesto impositivo de san martin. (pero ninguno impositivo de otro municipio)
+Cómo él posee 120 pesos puede usar un puesto impositivo de san Martín. (pero ninguno impositivo de otro municipio)
 - El monto exigible para manuel es de 0, ya que el número menor entre 0 (su deuda) y 30 (su dinero), es 0. la prorrogable es 0. 
 Cómo él posee no posee deuda, no puede usar un puesto impositivo de Quilmes
 - El monto exigible para remedios es 320, ya que el bruto es 400 por ser el 80% de 500, que es
@@ -172,7 +174,7 @@ usar un puesto impositivo de san martín
 peto si tuviera 80 años el monto exigible sería de 450, ya que recibiría 50 de prórroga. En ambos casos podría usar un puesto impositivo 
 de Quilmes
  
-### Usar puestos municipales
+## 2.2 Usar puestos municipales
 
 Cuando un visitante usa un puesto impositivo ocurre lo siguiente:
 
@@ -181,7 +183,7 @@ Cuando un visitante usa un puesto impositivo ocurre lo siguiente:
 - se registra en algún lugar que el municipió recaudó el monto exigible, ya que es requerimiento saber cuanto es el total recaudado 
 por un municipio
 
-### 2.2 requerimientos
+### Requerimientos
 
 - hacer que un visitante pueda visitar un puesto impositivo
 - saber el total recaudado por un municipio 
@@ -195,9 +197,9 @@ por un municipio
 
 - Agregar en la feria de la avenida Azurduy un puesto impositivo para  Tigre y otro para  San Martín (no para quilmes)
 (además de la de arte y dardos usado en puntos anteriores)
-- juana reside en San Martin, tiene 20 años, 1000 pesos y una deuda de 300. 
+- juana reside en San Martín, tiene 20 años, 1000 pesos y una deuda de 300. 
 - hacer que el puesto impositivo de tigre sea usado por remedios
-- hacer que e puesto impositivo de san martin sea usado por Juana y por Martín
+- hacer que e puesto impositivo de san Martín sea usado por Juana y por Martín
 verificar que:
 - martín no tiene mas deuda y le queda 40 de dinero
 - juana no tiene más deuda y le queda 700 de dinero
