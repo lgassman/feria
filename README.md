@@ -95,7 +95,7 @@ Luego de estas acciones comprobar que:
 - El puesto de arte fue usado  por Martín y Manuel.
 - El puesto de dardos due usados por Remedios y Martín.
 
-#### Saber si se usó o no una feria
+#### Saber si una persona visitante usó o no una feria
 
 1. Hacer que el puesto de dardos sea usado por Remedios. 
 2. hacer que el puesto de dardos sea usado por Manuel. (NO SE PUEDE!).
@@ -117,7 +117,7 @@ y cuánto dinero le debe éste. De cada puesto (impositivo o no) se conoce, tamb
 Para que un puesto impositivo pueda ser usado por una persona visitante debe cumplirse que:
 - El visitante debe residir en el mismo municipio que apadrina el puesto impositivo. 
 - El visitante debe tener deuda. 
-- El visitante debe ser capaz de pagar el monto que el municipio exigible por el municipio. 
+- El visitante debe ser capaz de pagar el monto exigile por el municipio apadrinante. 
 
 El monto exigible siempre se calcula como la resta de un monto bruto y un monto prorrogable.
 
@@ -131,7 +131,7 @@ es el 10 por ciento del monto bruto si la persona es mayor de 75 años o 0 en ot
 Para los **municipios relajados** el monto bruto es el número menor de entre la deuda y el dinero disponible,
 mientras que el monto prorrogable es igual que los municipios normales.
 
-Para los **municipios hiperrelajados", el monto bruto es el 80% del bruto de los **municipios relajados** y el 
+Para los **municipios hiperrelajados**, el monto bruto es el 80% del bruto que calcularía un **municipios relajado** y el 
 monto prorrogable es el doble que el del resto de los municipios. pero además la edad para saber si corresponde o no
 baja a 60 años.
 
