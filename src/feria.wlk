@@ -89,14 +89,26 @@ class Visitante {
 		return dinero > deuda
 	}
 	
+	method validarPagar(valor) {
+		if(dinero < valor ) {
+			self.error("no se puede pagar esa cantidad de deuda")
+		}
+	}
+	method validarPagarDeuda(valor) {
+		self.validarPagar(valor)
+		if(deuda < valor) {
+			self.error("no hay tanta deuda")			
+		}
+	}
+	
 	method pagarDeuda(valor) {
-		console.println("valor" + valor + " diner " + dinero + " deuda " + deuda)
+		self.validarPagarDeuda(valor)
 		dinero = dinero - valor
 		deuda = deuda - valor
-		console.println("valor" + valor + " diner " + dinero + " deuda " + deuda)
 	}
 	
 	method pagar(costo) {
+		self.validarPagar(costo)
 		dinero-=costo
 	}
 	
@@ -113,6 +125,7 @@ class Visitante {
 class Municipio{
 	
 	var property recaudacion=0
+	
 	method puedePagarDeuda(visitante) {
 		return visitante.deuda() > 0  and 
 				visitante.residente(self) and 

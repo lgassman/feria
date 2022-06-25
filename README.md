@@ -108,30 +108,52 @@ Luego de estas acciones comprobar que:
 ## 2.1 Consultas
 Todos los puestos tienen un municipio que los apadrina. 
 
-Existen Los **puestos impositivos** que al ser usado, un visitante pagará toda o parte de su deuda municipal.
+Existen Los **puestos impositivos** 
+que al ser usado, un visitante pagará toda 
+o parte de su deuda municipal.
 
-Por eso de cada visitante se conoce, además de lo explicado en el punto anterior, cuál es su municipio de residencia
-y cuánto dinero le debe éste. De cada puesto (impositivo o no) se conoce, también, el municipio que lo apadrina.
+Por eso de cada visitante se conoce, 
+además de lo explicado en el punto anterior, 
+cuál es su municipio de residencia
+y cuánto dinero le debe éste. 
+
+De cada puesto (impositivo o no) se conoce,
+ también, el municipio que lo apadrina.
 
 Para que un puesto impositivo pueda ser usado por una persona visitante debe cumplirse que:
-- El visitante debe residir en el mismo municipio que apadrina el puesto impositivo. 
-- El visitante debe tener deuda. 
-- El visitante debe ser capaz de pagar el monto exigible por el municipio apadrinante. 
+- El visitante debe residir en el mismo municipio 
+que apadrina el puesto impositivo. 
 
-El monto exigible siempre se calcula como la resta de un monto bruto y un monto prorrogable.
+- El visitante debe tener deuda.
+ 
+- El visitante debe ser capaz de pagar el monto exigible por
+ el municipio apadrinante. 
+
+El monto exigible siempre se calcula como l
+a resta de un monto bruto y un monto prorrogable.
 
 ```
    monto exigible = monto bruto - monto prorrogable
 ```
 
-Para los **municipios normales**, el monto bruto es la totalidad de la deuda del visitante, y el monto prorrogable
-es el 10 por ciento del monto bruto si la persona es mayor de **75 años** o 0 en otro caso.
+Para los **municipios normales**, el monto bruto es la
+ totalidad de la deuda del visitante,
+  y el monto prorrogable
+es el 10 por ciento del monto bruto 
+si la persona es mayor de **75 años** 
+o 0 en otro caso.
 
-Para los **municipios relajados** el monto bruto es el número menor de entre la deuda y el dinero disponible,
-mientras que el monto prorrogable es igual que los **municipios normales**.
+Para los **municipios relajados**
+ el monto bruto es el número menor de 
+ entre la deuda y el dinero disponible, 
+mientras que el monto prorrogable es igual que los 
+**municipios normales**.
 
-Para los **municipios hiperrelajados**, el monto bruto es el 80% del bruto que calcularía un **municipio relajado** y el 
-monto prorrogable es el doble que el del resto de los municipios. Pero además, la edad para saber si corresponde o no
+Para los **municipios hiperrelajados**, el 
+monto bruto es el 80% del bruto que calcularía un 
+**municipio relajado** y el 
+monto prorrogable es el doble que el del resto de los municipios. 
+Pero además, la edad para saber si corresponde o no
 baja a **60 años**.
 
 **Nota:** El efecto del uso se resolverá más adelante en el siguiente punto (2.2)
